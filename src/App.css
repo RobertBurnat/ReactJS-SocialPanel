@@ -1,0 +1,39 @@
+.AppContainer {
+	
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.comment-list {
+	border: 2px solid #ccc;
+	height: 675px;
+	width: 470px;
+	display: flex;
+	overflow-y: scroll;
+	flex-direction: column;
+}
+.comment-adder {
+	text-align: center;
+	width: 470px;
+}
+.single-comment {
+	padding: 15px;
+	border-bottom: 2px solid #ccc;
+	width: 90%;
+}
+.portrait {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+}
+.person-name {
+	margin-top: 10px;
+	font-weight: bolder;
+	color: #002C71;
+}
+.infos {
+	display: inline-block;
+	margin-left: 15px;
+}
