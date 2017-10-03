@@ -36,5 +36,10 @@
 .infos {
 	display: inline-block;
 	margin-left: 15px;
-	width: 50%;
+	width: 60%;
+}
+.date {
+	float: right;
+	padding-top: 10px;
+	font-size: 14px;
 }
