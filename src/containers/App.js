@@ -23,19 +23,19 @@ class App extends Component {
           text: 'Oh hay',
           name: 'Rachel Zein',
           imageUrl: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb.jpg',
-          time: moment()
+          time: moment("2017-09-30")
         }, {
           id: uuid.v4(),
           text: 'Nice profile dude',
           name: 'Louis Litt',
           imageUrl: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb.jpg',
-          time: moment("2017-09-30")
+          time: moment("2017-10-01")
         }, {
           id: uuid.v4(),
           text: 'Oh thank you m8s!',
           name: 'Harvey Specter',
           imageUrl: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb.jpg',
-          time: moment("2017-10-01")
+          time: moment("2017-10-02")
       }],
       likes: {
         quantity: 122,
