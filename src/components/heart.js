@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from 'react'
+import styles from '../App.css'
 
-class Heart extends React.Component {
+class Heart extends Component {
     constructor(props) {
         super(props)
 
@@ -18,8 +19,8 @@ class Heart extends React.Component {
 
     getHeartIcon() { 
         const heartIcon = this.state.value 
-            ? '<img src="/heart.png" width="32" height="32" />'
-            : '<img src="/heart-checked.png" width="32" height="32" />'
+            ? '<img src="/heart.png" class="hearth-icon" />'
+            : '<img src="/heart-checked.png" class="hearth-icon" />'
 
         return {__html: heartIcon}; 
     };

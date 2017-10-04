@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Component } from 'react'
+import styles from '../App.css'
 
-class Mark extends React.Component {
+class Mark extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div className="mark">
-                <p>{ this.props.option.quantity }</p>
-                <span>{ this.props.option.text }</span>
+            <div className="marks">
+                <p className="quantity">{ this.props.option.quantity }</p>
+                <span className="quantity-text">{ this.props.option.text }</span>
             </div>
         )
     }
