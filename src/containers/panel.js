@@ -59,7 +59,7 @@ class Panel extends Component {
                     <div className="marks-container">
                         <div className="row responsive-row">
                           <div className="col-xs-4 col-md-3 mark-yes">
-                				    <Mark option={ this.state.likes }/>
+                				<Mark option={ this.state.likes }/>
                           </div>
                           <div className="col-xs-4 col-md-3 mark-yes">
                         		<Mark option={ this.state.following }/>

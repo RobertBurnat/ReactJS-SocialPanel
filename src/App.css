@@ -9,31 +9,23 @@
 	flex-direction: column;
 	background-color: #fff;
 	margin: 0 auto;
-	max-width: 700px;
-}
-.AppContainer::before {
-	content: "";
-	width: 650px;
-	height: 650px;
+	max-width: 500px;
 	border: 1px solid #ccc;
-	z-index: -1;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%);
-	background: rgba(0,44,113,1);
-	margin-top:-50px;
-	border-radius: 10px;
+	border-top: 80px solid rgba(0,44,113,1);
+	border-radius: 5px;
 }
 
 /*UPP*/
 
 .panel-container {
+	position: relative;
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
 	border-radius: 5px;
-	width: 540px;
-	padding: 0 0 10px 5px
+	width: 466px;
+	padding: 0 0 10px 5px;
+	top: -60px;
+	background-color: #fff;
 }
 .marks-container {
 	display: flex;
@@ -43,7 +35,7 @@
 }
 .marks {
 	padding-right: 2vw;
-	margin: 0 1vw;
+	margin: 0 0.5vw;
 }
 .mark-yes {
 	border-right: 2px solid #ccc;
@@ -70,6 +62,7 @@
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	float: right;
+	margin-left: 10px;
 }
 .follow {
 	margin-left: -6vw;
@@ -95,7 +88,7 @@
 }
 .quantity {
 	color: #FFA640;
-	font-size: 25px;
+	font-size: 24px;
 	margin-bottom: -5px;
 }
 .quantity-text {
@@ -111,29 +104,34 @@
 	display: flex;
 	overflow-y: auto;
 	flex-direction: column;
-	width: 540px;
+	width: 466px;
 	height: 520px;
+	position: relative;
+	top: -60px;
+	border-radius: 5px 5px 0 0;
 }
 .comment-adder {
 	text-align: center;
 	border: 1px solid #ccc;
 	border-top: none;
-	width: 540px;
+	width: 466px;
 	height: 80px;
 	text-align: left;
 	padding: 0 20px;
 	border-radius: 0 0 5px 5px;
 	line-height: 1px;
+	position: relative;
+	top: -60px;
 }
 .input {
 	position: relative;
 }
 .input::after {
 	content: '';
-    width: 95%;
+    width: 90%;
     position: absolute;
     left: 0;
-    bottom: 32px;
+    bottom: 92px;
     border-bottom: 2px solid #ccc;
     margin-left: 20px;
 }
