@@ -39,15 +39,18 @@ class App extends Component {
     }
 
     this.addComment = this.addComment.bind(this);
+    this.momentUpdate = this.momentUpdate.bind(this);
   }
-
+  momentUpdate() {
+  moment.localeData('en')._relativeTime.s = 'seconds';
+  }
   addComment(val) {
     const newComment = {
       text: val,
       id: uuid.v4(),
-      name: 'Harvey Specter',
+      name: 'Mike Ross',
       imageUrl: 'https://i.imgur.com/FTDAeUL.jpg',
-      time: moment()
+      time: this.momentUpdate()
     };
     const data = [...this.state.data, newComment];
     this.setState({data});

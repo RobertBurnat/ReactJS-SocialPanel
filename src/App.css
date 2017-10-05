@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 #root {
 	margin-top: 50px;
 }
@@ -13,10 +15,20 @@
 	border: 1px solid #ccc;
 	border-top: 80px solid rgba(0,44,113,1);
 	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*UPP*/
 
+.share-button {
+	display: inline-block;
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin: 10px 10px 0 0;
+	position: absolute;
+	right: 0;
+}
 .panel-container {
 	position: relative;
 	border: 1px solid #ccc;
@@ -30,12 +42,11 @@
 .marks-container {
 	display: flex;
 	flex-direction: row;
-	
 	text-align: center;
 }
 .marks {
-	padding-right: 2vw;
-	margin: 0 0.5vw;
+	padding-right: 1.5vw;
+	margin: 0 0.3vw;
 }
 .mark-yes {
 	border-right: 2px solid #ccc;
@@ -62,7 +73,8 @@
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	float: right;
-	margin-left: 10px;
+	margin-left: 45px;
+	
 }
 .follow {
 	margin-left: -6vw;
@@ -90,6 +102,7 @@
 	color: #FFA640;
 	font-size: 24px;
 	margin-bottom: -5px;
+	width: 50px;
 }
 .quantity-text {
 	display: inline-block;
@@ -131,7 +144,7 @@
     width: 90%;
     position: absolute;
     left: 0;
-    bottom: 92px;
+    bottom: 87px;
     border-bottom: 2px solid #ccc;
     margin-left: 20px;
 }
@@ -158,11 +171,12 @@
 .infos {
 	display: inline-block;
 	margin-left: 15px;
-	width: 60%;
+	width: 75%;
 }
 .date {
-	float: right;
-	padding-top: 10px;
+	position: absolute;
+	right: 60px;
+	padding-top: 5px;
 	font-size: 10px;
 	color: #002C71;
 }
@@ -170,9 +184,7 @@
 /*MEDIAS*/
 
 @media (max-width: 575px) {
-	.infos {
-		width: 40%;
-	}
+
 	.comment-list,
 	.panel-container,
 	.comment-adder {
@@ -181,6 +193,22 @@
 }
 
 @media(max-width: 991px) {
+	.AppContainer {
+		max-width: 320px;
+	}
+	.panel-container {
+		width: 283px;
+	}
+	.date {
+		position: absolute;
+		right: 30px;
+		font-size: 10px;
+		color: #002C71;
+		padding-top: initial;
+}
+	.comment-list {
+		width: 283px;
+	}
 	.responsive-button {
 		display: flex;
 		justify-content: center;
@@ -200,12 +228,11 @@
 	.panel-photo {
 		margin-bottom: -15px;
 	}
-}
-
-@media (min-width: 576px) and (max-width: 991px) {
-
-	.responsive-button {
-		margin-left: 20px;
+	.quantity {
+		width: initial;
+	}
+	.comment-adder {
+		width: 283px;
 	}
 }
 

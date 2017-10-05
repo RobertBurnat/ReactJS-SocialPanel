@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Mark from '../components/mark'
 import Heart from '../components/heart'
 import Follow from '../components/follow'
+import Share from '../components/share'
 import styles from '../App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -45,6 +46,7 @@ class Panel extends Component {
     render() {
         return (
           <div className="panel-container">
+            <Share />
                 <div className="row">
                   <div className="col-xs-12">
                     <div className="person-info">
