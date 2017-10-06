@@ -21,13 +21,12 @@
 /*UPP*/
 
 .share-button {
-	display: inline-block;
-	float: right;
+	display: block;
 	width: 15px;
 	height: 15px;
 	margin: 10px 10px 0 0;
-	position: absolute;
-	right: 0;
+	float: right;
+	cursor: pointer;
 }
 .panel-container {
 	position: relative;
@@ -43,6 +42,9 @@
 	display: flex;
 	flex-direction: row;
 	text-align: center;
+}
+.responsive-row {
+	margin-top: -10px;
 }
 .marks {
 	padding-right: 1.5vw;
@@ -74,7 +76,6 @@
 	text-transform: uppercase;
 	float: right;
 	margin-left: 45px;
-	
 }
 .follow {
 	margin-left: -6vw;
@@ -83,12 +84,12 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	margin: 10px 20px 0 15px;
+	margin: 0 20px 0 15px;
 	float: left;
 }
 .namePerson {
 	display: inline-block;
-	margin-top: 28px;
+	margin-top: 20px;
 	color: #002C71;
 }
 .from {
@@ -171,7 +172,7 @@
 .infos {
 	display: inline-block;
 	margin-left: 15px;
-	width: 75%;
+	width: 85%;
 }
 .date {
 	position: absolute;
@@ -179,6 +180,19 @@
 	padding-top: 5px;
 	font-size: 10px;
 	color: #002C71;
+}
+
+/*Modal STYLES*/
+
+.Modal {
+	border: 5px solid #ccc;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%);
+	background: #fff;
+	width: 450px;
+	text-align: center;
 }
 
 /*MEDIAS*/
@@ -205,7 +219,7 @@
 		font-size: 10px;
 		color: #002C71;
 		padding-top: initial;
-}
+	}
 	.comment-list {
 		width: 283px;
 	}
@@ -218,12 +232,26 @@
 	.follow-button {
 		width: 248px;
 	}
+	.follow {
+		margin-left: -50px;
+	}
+	.panel-photo {
+		margin-top: -75px;
+	}
+	.namePerson {
+		margin-top: 32px;
+	}
 	.person-info {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin-top: -50px;
+	}
+	.infos {
+		width: 75%;
+	}
+	.share-button {
+		display: block;
 	}
 	.panel-photo {
 		margin-bottom: -15px;
@@ -233,6 +261,11 @@
 	}
 	.comment-adder {
 		width: 283px;
+	}
+	.Modal {
+		max-width: 300px;
+		left: 50%;
+
 	}
 }
 
