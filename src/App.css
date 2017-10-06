@@ -76,7 +76,6 @@
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	float: right;
-	
 }
 .follow {
 	margin-left: 60px;
@@ -235,7 +234,7 @@
 		margin-left: 50px;
 	}
 	.follow {
-		margin-left: -50px;
+		margin-left: -55px;
 	}
 	.panel-photo {
 		margin-top: -75px;
@@ -248,6 +247,9 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+	}
+	.marks {
+		padding-right: 15px;
 	}
 	.infos {
 		width: 75%;
