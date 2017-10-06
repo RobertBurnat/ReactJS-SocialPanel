@@ -50,11 +50,11 @@ class Panel extends Component {
                 <div className="row">
                   <div className="col-xs-12">
                     <div className="person-info">
-                      <img src="https://i.imgur.com/FTDAeUL.jpg" className="panel-photo" alt="photo" />
+                      <img src="/photo.jpg" className="panel-photo" alt="photo" />
                       <h4 className="namePerson">Harvey Specter
                       <Heart like={ this.like } /></h4>
                       <p className="from">New York, USA</p>
-                      <p class="fill">Secret</p>
+                      <p className="fill">Secret</p>
                     </div>
                   </div>
                 </div>
